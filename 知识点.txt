@@ -1,2 +1,11 @@
-绝对值:abs(x)
+绝对值:abs(数)
+交换数据:swap(一个数,另一个数)
 排序:sort(列表,结束位置,排序方式)
+
+sort排序方式:
+bool cmp(int a,int b) {
+    return a<b; //a<b是从小到大,a>b是从大到小
+}
+或
+sort(数组名.begin(), 数组名.end());          // 升序：1 2 3 5 9
+sort(数组名.begin(), 数组名.end(), greater<int>());  // 降序：9 5 3 2 1
